@@ -1,5 +1,3 @@
-from django.http import JsonResponse
-from django.shortcuts import render
 from rest_framework.views import APIView
 from .models import FitnessClass, Booking
 from django.utils.timezone import now
