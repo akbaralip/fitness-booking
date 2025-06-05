@@ -8,7 +8,7 @@ class FitnessClass(models.Model):
     available_slots = models.PositiveIntegerField()
 
     def __str__(self):
-        return f"{self.name} - {self.datetime.strftime('%Y-%m-%d %H:%M')}"
+        return f"{self.name} - {self.datetime.strftime('%d-%m-%Y %H:%M')}"
 
 class Booking(models.Model):
     fitness_class = models.ForeignKey(FitnessClass, on_delete=models.CASCADE)
