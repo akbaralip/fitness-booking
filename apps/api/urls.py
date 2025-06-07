@@ -3,4 +3,6 @@ from .views import *
 
 urlpatterns = [
     path('classes/', FitnessClassListing.as_view()),
+    path('book-class/', BookClass.as_view()),
+    path('bookings/', Bookings.as_view())
 ]
